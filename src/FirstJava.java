@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  *  My first hello world program
  *  I learned about command-line arguments also
@@ -7,8 +9,12 @@
 public class FirstJava {
     public static void main(String[] args) {
         System.out.println("Hello World!");
-        for(String s : args)
-            System.out.println(s);
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter your name: ");
+        String name = in.nextLine();
+        System.out.println("Hello, " + name + ", have a great weekend");
+        /*for(String s : args)
+            System.out.println(s);*/
     }
 }
 
